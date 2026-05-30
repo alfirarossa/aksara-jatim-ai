@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>AKSARA JATIM AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <div class="logo">
+
+            AKSARA JATIM AI
+
+        </div>
+
+        <ul>
+
+            <li><a href="#beranda">Beranda</a></li>
+
+            <li><a href="#tentang">Tentang</a></li>
+
+            <li><a href="#program">Program</a></li>
+
+            <li><a href="#artikel">Artikel</a></li>
+
+            <li><a href="#karya">Karya</a></li>
+            <li><a href="#unggah-karya">Unggah Karya</a></li>
+
+            <li><a href="#galeri">Galeri</a></li>
+
+            <li><a href="#kontak">Kontak</a></li>
+
+        </ul>
+
+        <button onclick="darkMode()">
+
+            Dark Mode
+
+        </button>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <header id="beranda">
+
+        <div class="hero-content">
+
+            <h1>
+
+                AKSARA JATIM AI
+
+            </h1>
+
+            <p>
+
+                Merawat Aksara,
+                Menguatkan Literasi,
+                Menghadapi Era Kecerdasan Buatan
+
+            </p>
+
+            <div class="hero-button">
+
+    <a href="#program">
+
+        <button>
+
+            Jelajahi Program
+
+        </button>
+
+    </a>
+
+    <a href="#relawan">
+
+        <button>
+
+            Gabung Komunitas
+
+        </button>
+
+    </a>
+
+</div>
+
+<div class="hero-mini-stats">
+
+    <div>
+
+        👥 1.250+ Pelajar
+
+    </div>
+
+    <div>
+
+        🏫 35 Sekolah
+
+    </div>
+
+    <div>
+
+        📚 120 Buku
+
+    </div>
+
+</div>
+
+        </div>
+
+    </header>
+
+    <!-- TENTANG -->
+
+    <section id="tentang">
+
+        <h2 class="section-title">
+
+            Tentang Program
+
+        </h2>
+
+        <div class="card">
+
+            <p>
+
+                AKSARA JATIM AI merupakan platform
+                literasi digital berbasis budaya Jawa Timur
+                yang bertujuan meningkatkan literasi,
+                pemanfaatan kecerdasan buatan,
+                serta kemampuan berpikir kritis masyarakat.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- STATISTIK -->
+
+    <section class="stats">
+
+        <div class="stat-box">
+
+            <h2 class="counter"
+                data-target="1250">0</h2>
+
+            <p>Pelajar Teredukasi</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h2 class="counter"
+                data-target="35">0</h2>
+
+            <p>Sekolah Mitra</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h2 class="counter"
+                data-target="120">0</h2>
+
+            <p>Buku Rekomendasi</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h2 class="counter"
+                data-target="500">0</h2>
+
+            <p>Komunitas Literasi</p>
+
+        </div>
+
+    </section>
+
+    <!-- PROGRAM -->
+
+    <section id="program">
+
+        <h2 class="section-title">
+
+            Program Unggulan
+
+        </h2>
+
+        <div class="program-grid">
+
+            <div class="program-card">
+
+                <h3>Literasi AI</h3>
+
+                <p>
+
+                    Edukasi pemanfaatan AI
+                    secara etis dan bertanggung jawab.
+
+                </p>
+
+            </div>
+
+            <div class="program-card">
+
+                <h3>Cek Fakta Jatim</h3>
+
+                <p>
+
+                    Membantu masyarakat
+                    mengenali hoaks digital.
+
+                </p>
+
+            </div>
+
+            <div class="program-card">
+
+                <h3>Book Match</h3>
+
+                <p>
+
+                    Sistem rekomendasi buku
+                    sesuai minat pembaca.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TIMELINE -->
+
+    <section id="timeline">
+
+        <h2 class="section-title">
+
+            Timeline Program
+
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <h3>2026</h3>
+
+                <p>Peluncuran Program</p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <h3>2027</h3>
+
+                <p>Implementasi Sekolah Mitra</p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <h3>2028</h3>
+
+                <p>Ekspansi Jawa Timur</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- AI BOOK MATCH -->
+
+    <section id="bookmatch">
+
+        <h2 class="section-title">
+
+            AI Book Match
+
+        </h2>
+
+        <div class="card">
+
+            <label>
+
+                Pilih Minat Bacamu
+
+            </label>
+
+            <select id="bookInterest">
+
+                <option value="">
+
+                    -- Pilih --
+
+                </option>
+
+                <option value="teknologi">
+
+                    Teknologi
+
+                </option>
+
+                <option value="motivasi">
+
+                    Motivasi
+
+                </option>
+
+                <option value="sejarah">
+
+                    Sejarah
+
+                </option>
+
+            </select>
+
+            <br><br>
+
+            <button onclick="recommendBook()">
+
+                Cari Buku
+
+            </button>
+
+            <div id="bookResult">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ARTIKEL -->
+
+<section id="artikel">
+
+    <h2 class="section-title">
+
+        Artikel Literasi
+
+    </h2>
+
+    <div class="program-grid">
+
+        <!-- ARTIKEL 1 -->
+
+        <a href="artikel/hoaks-ai.html"
+            class="article-link">
+
+            <div class="program-card">
+
+                <h3>
+
+                    Bahaya Hoaks di Era AI
+
+                </h3>
+
+                <p>
+
+                    Tips mengenali informasi palsu
+                    dan cara melakukan verifikasi
+                    informasi di era kecerdasan buatan.
+
+                </p>
+
+                <small>
+
+                    Baca Selengkapnya →
+
+                </small>
+
+            </div>
+
+        </a>
+
+        <!-- ARTIKEL 2 -->
+
+        <a href="artikel/ai-pendidikan.html"
+            class="article-link">
+
+            <div class="program-card">
+
+                <h3>
+
+                    AI untuk Pendidikan
+
+                </h3>
+
+                <p>
+
+                    Mengenal pemanfaatan AI
+                    sebagai alat bantu belajar
+                    yang produktif dan bertanggung jawab.
+
+                </p>
+
+                <small>
+
+                    Baca Selengkapnya →
+
+                </small>
+
+            </div>
+
+        </a>
+
+        <!-- ARTIKEL 3 -->
+
+        <a href="artikel/budaya-literasi.html"
+            class="article-link">
+
+            <div class="program-card">
+
+                <h3>
+
+                    Budaya Literasi Digital
+
+                </h3>
+
+                <p>
+
+                    Membangun masyarakat yang kritis,
+                    cerdas, dan mampu memanfaatkan
+                    teknologi secara bijak.
+
+                </p>
+
+                <small>
+
+                    Baca Selengkapnya →
+
+                </small>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- PENULIS TERAKTIF -->
+
+<section id="penulis">
+
+    <h2 class="section-title">
+
+        Penulis Teraktif
+
+    </h2>
+
+    <div class="program-grid">
+
+        <div class="program-card">
+
+            <h3>🥇 Penulis 1</h3>
+
+            <p>15 Karya</p>
+
+        </div>
+
+        <div class="program-card">
+
+            <h3>🥈 Penulis 2</h3>
+
+            <p>12 Karya</p>
+
+        </div>
+
+        <div class="program-card">
+
+            <h3>🥉 Penulis 3</h3>
+
+            <p>9 Karya</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- KATEGORI ARTIKEL -->
+
+<section id="kategori-artikel">
+
+    <h2 class="section-title">
+
+        Kategori Literasi
+
+    </h2>
+
+    <div class="program-grid">
+
+        <div class="program-card">
+
+            <h3>Literasi Digital</h3>
+
+            <ul>
+                <li>Bahaya Hoaks di Era AI</li>
+                <li>Keamanan Data Pribadi</li>
+                <li>Etika Penggunaan AI</li>
+                <li>Jejak Digital</li>
+            </ul>
+
+        </div>
+
+        <div class="program-card">
+
+            <h3>Literasi Baca Tulis</h3>
+
+            <ul>
+                <li>Menulis Esai</li>
+                <li>Menulis Cerpen</li>
+                <li>Resensi Buku</li>
+                <li>Artikel Opini</li>
+            </ul>
+
+        </div>
+
+        <div class="program-card">
+
+            <h3>Literasi Budaya Jatim</h3>
+
+            <ul>
+                <li>Batik Jawa Timur</li>
+                <li>Cerita Panji</li>
+                <li>Wayang Nusantara</li>
+                <li>Tradisi Lokal</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- DAMPAK -->
+
+    <section>
+
+        <h2 class="section-title">
+
+            Dampak Program
+
+        </h2>
+
+        <div class="card">
+
+            <h3>Pelajar Teredukasi</h3>
+
+            <div class="progress">
+
+                <div class="progress-fill p1">
+
+                    75%
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <h3>Sekolah Mitra</h3>
+
+            <div class="progress">
+
+                <div class="progress-fill p2">
+
+                    60%
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALERI -->
+
+    <section id="galeri">
+
+        <h2 class="section-title">
+
+            Galeri Kegiatan
+
+        </h2>
+
+        <div class="gallery">
+
+            <img src="zimages/foto1.jpg">
+
+            <img src="images/foto2.jpg">
+
+            <img src="zimages/foto3.jpg">
+
+        </div>
+
+    </section>
+
+    <!-- TESTIMONI -->
+
+    <section>
+
+        <h2 class="section-title">
+
+            Testimoni
+
+        </h2>
+
+        <div class="program-grid">
+
+            <div class="program-card">
+
+                <p>
+
+                    "Program yang sangat bermanfaat."
+
+                </p>
+
+                <strong>
+
+                    - Pelajar
+
+                </strong>
+
+            </div>
+
+            <div class="program-card">
+
+                <p>
+
+                    "Menggabungkan budaya dan teknologi."
+
+                </p>
+
+                <strong>
+
+                    - Guru
+
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FAQ -->
+
+    <section id="faq">
+
+        <h2 class="section-title">
+
+            FAQ
+
+        </h2>
+
+        <div class="program-card">
+
+            <h3>
+
+                Apa itu AKSARA JATIM AI?
+
+            </h3>
+
+            <p>
+
+                Platform literasi digital berbasis budaya Jawa Timur.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- MITRA -->
+
+    <section>
+
+        <h2 class="section-title">
+
+            Mitra Kolaborasi
+
+        </h2>
+
+        <div class="program-grid">
+
+            <div class="program-card">Sekolah</div>
+
+            <div class="program-card">Perpustakaan</div>
+
+            <div class="program-card">Komunitas</div>
+
+            <div class="program-card">Pemerintah</div>
+
+        </div>
+
+    </section>
+
+    <!-- TIM -->
+
+    <section>
+
+        <h2 class="section-title">
+
+            Tim Pengembang
+
+        </h2>
+
+        <div class="program-grid">
+
+            <div class="program-card">
+
+                <h3>Alfira Rossa</h3>
+
+                <p>Founder</p>
+
+            </div>
+
+            <div class="program-card">
+
+                <h3>AKSARA Team</h3>
+
+                <p>Developer</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RELAWAN -->
+
+<section id="relawan">
+
+    <h2 class="section-title">
+
+        Daftar Relawan
+
+    </h2>
+
+        <div class="card">
+
+            <form>
+
+                <input type="text"
+                    placeholder="Nama">
+
+                <input type="email"
+                    placeholder="Email">
+
+                <input type="text"
+                    placeholder="Asal Sekolah">
+
+                <button>
+
+                    Daftar
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- KONTAK -->
+
+    <section id="kontak">
+
+        <h2 class="section-title">
+
+            Hubungi Kami
+
+        </h2>
+
+        <div class="card">
+
+            <p>Email : aksarajatimai@gmail.com</p>
+
+            <p>Instagram : @aksarajatimai</p>
+
+            <p>WhatsApp : 08xxxxxxxxxx</p>
+
+        </div>
+
+    </section>
+
+    <!-- NEWSLETTER -->
+
+<section id="newsletter">
+
+    <h2 class="section-title">
+
+        Newsletter Literasi
+
+    </h2>
+
+    <div class="card">
+
+        <p>
+
+            Dapatkan informasi terbaru
+            seputar literasi, AI,
+            dan budaya Jawa Timur.
+
+        </p>
+
+        <br>
+
+        <input
+            type="email"
+            placeholder="Masukkan Email">
+
+        <br><br>
+
+        <button>
+
+            Berlangganan
+
+        </button>
+
+    </div>
+
+</section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>
+
+            AKSARA JATIM AI
+
+        </h3>
+
+        <p>
+
+            Literasi • Budaya • Teknologi
+
+        </p>
+
+        <p>
+            
+            © <span id="year"></span>
+            
+            AKSARA JATIM AI
+        
+        </p>
+
+    </footer>
+
+    <button id="topBtn"
+        onclick="topFunction()">
+
+        ↑
+
+    </button>
+
+    <a
+href="https://wa.me/6282331876417"
+target="_blank"
+class="wa-button">
+
+💬
+
+</a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
